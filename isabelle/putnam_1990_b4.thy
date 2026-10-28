@@ -1,6 +1,10 @@
 theory putnam_1990_b4 imports Complex_Main "HOL-Algebra.Multiplicative_Group" 
 begin
 
+definition putnam_1990_b4_solution :: bool where
+"putnam_1990_b4_solution \<equiv> undefined"
+(* True *)
+
 theorem putnam_1990_b4:
   assumes pacard: "\<exists> pamap :: 'a \<Rightarrow> nat. surj pamap"
   shows "(\<forall> (G :: 'a monoid) (n :: nat) (a :: 'a) (b :: 'a). Group.group G \<and> finite (carrier G) \<and> card (carrier G) = n \<and> 
