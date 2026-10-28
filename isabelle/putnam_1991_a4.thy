@@ -15,3 +15,5 @@ theorem putnam_1991_a4:
     and "crline \<equiv> \<lambda> c r. \<forall> v w :: real^2. w \<noteq> 0 \<longrightarrow> (\<exists> i :: nat. {p :: real^2. \<exists> t :: real. p = v + t *s w} \<inter> cball (c i) (r i) \<noteq> {})"
   shows "(\<exists> c :: nat \<Rightarrow> real^2. \<exists> r :: nat \<Rightarrow> real. (\<forall> i :: nat. r i \<ge> 0) \<and> climit c \<and> rareas r \<and> crline c r) \<longleftrightarrow> putnam_1991_a4_solution"
   sorry
+
+end

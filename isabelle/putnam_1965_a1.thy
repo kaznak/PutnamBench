@@ -10,7 +10,7 @@ definition angle where
   "angle a b c = vangle (a - b) (c - b)"
 definition putnam_1965_a1_solution :: "real" where
 "putnam_1965_a1_solution \<equiv> undefined"
-(* pi / (15 :: real) *)"
+(* pi / (15 :: real) *)
 theorem putnam_1965_a1:
   fixes A B C X Y :: "real^2"
   assumes hABC : "\<not> collinear {A,B,C}"
