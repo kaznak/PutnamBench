@@ -14,7 +14,7 @@ definition putnam_1965_a1_solution :: "real" where
 theorem putnam_1965_a1:
   fixes A B C X Y :: "real^2"
   assumes hABC : "\<not> collinear {A,B,C}"
-    and hangles : "angle C A B < angle B C A \<and> angle B C A < \<pi>/2 \<and> pi / 2 < angle A B C"
+    and hangles : "angle C A B < angle B C A \<and> angle B C A < pi/2 \<and> pi / 2 < angle A B C"
     and hX : "collinear {X, B, C} \<and> angle X A B = (pi - angle C A B)/2 \<and> dist A X = dist A B"
     and hY : "collinear {Y, C, A} \<and> angle Y B C = (pi - angle A B C)/2 \<and> dist B Y = dist A B"
   shows "angle C A B = putnam_1965_a1_solution"

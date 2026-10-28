@@ -11,8 +11,8 @@ theorem putnam_2017_a1:
     2 \<in> S \<and>
     (\<forall> n > 0. n^2 \<in> S \<longrightarrow> n \<in> S) \<and>
     (\<forall> n \<in> S. (n + 5)^2 \<in> S)"
-    and hS : "S = (LEAST A. IsQualifying S)"
-  shows "putnam_2017_a1_solution = {x :: int. x > 0} - s"
+    and hS : "S = (LEAST A. IsQualifying A)"
+  shows "putnam_2017_a1_solution = {x :: int. x > 0} - S"
   sorry
 
 end

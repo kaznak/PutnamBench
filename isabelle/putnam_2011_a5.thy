@@ -13,7 +13,7 @@ theorem putnam_2011_a5:
   and prop1: "\<forall> u :: real. f u u = 0"
   and prop2: "\<forall> x :: real. g x > 0 \<and> x ^ 2 * g x \<le> 1"
   and prop3: "\<forall> u v :: real. \<exists> c :: real. deriv (\<lambda> x. f x v) u = c * g u \<and> deriv (f u) v = c * (-g v)"
-  shows "\<exists> C :: real. \<forall> n \<ge> 2. \<forall> x :: nat \<Rightarrow> real. (LEAST Fxx :: real. \<exists> i j :: nat. i \<le> n \<and> j \<le> n \<and> i \<noteq> j \<and> Fxx = \<bar>F (x i) (x j)\<bar>) \<le> C / n"
+  shows "\<exists> C :: real. \<forall> n \<ge> 2. \<forall> x :: nat \<Rightarrow> real. (LEAST Fxx :: real. \<exists> i j :: nat. i \<le> n \<and> j \<le> n \<and> i \<noteq> j \<and> Fxx = \<bar>f (x i) (x j)\<bar>) \<le> C / n"
   sorry
 
 end

@@ -17,7 +17,7 @@ theorem putnam_1976_b3:
   and hu01: "u 0 = 1 \<and> u 1 = 1 - a"
   and huk: "\<forall> k \<ge> 1. u (k + 1) = u k - a * (u (k-1))"
   and hupos: "\<forall> k :: nat. u k > 0"
-  and heventsmeas: "\<forall> i < n. A i \<in> prob_space.events M"
+  and heventsmeas: "\<forall> i < n. events i \<in> prob_space.events M"
   and heventsprob: "\<forall> i < n. M (events i) \<ge> 1 - a"
   and heventsindep: "\<forall> i < n. \<forall> j < n. \<bar>int i - int j\<bar> > 1 \<longrightarrow> prob_space.indep_event M (events i) (events j)" 
   shows "M (\<Inter> i < n. events i) \<ge> u n"
