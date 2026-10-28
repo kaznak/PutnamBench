@@ -1,4 +1,5 @@
 theory putnam_1976_a3 imports Complex_Main
+"HOL-Computational_Algebra.Primes"
 begin
 
 definition putnam_1976_a3_solution :: "(nat \<times> nat \<times> nat \<times> nat) set" where

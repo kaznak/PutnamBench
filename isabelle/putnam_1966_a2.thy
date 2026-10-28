@@ -2,6 +2,7 @@ theory putnam_1966_a2 imports Complex_Main
 "HOL-Analysis.Linear_Algebra"
 "HOL-Analysis.Elementary_Metric_Spaces"
 "HOL-Analysis.Finite_Cartesian_Product"
+"HOL-Analysis.Convex"
 begin
 
 theorem putnam_1966_a2:
