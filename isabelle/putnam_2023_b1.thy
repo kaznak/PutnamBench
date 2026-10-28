@@ -16,7 +16,7 @@ theorem putnam_2023_b1:
         (\<forall> i' j' :: nat. ((i', j') \<noteq> (i, j) \<and> (i', j') \<noteq> (i + 1, j) \<and> (i', j') \<noteq> (i, j + 1) \<and> (i', j') \<noteq> (i + 1, j + 1)) \<longrightarrow> coins1 i' j' = coins2 i' j')"
   and "legalseq \<equiv> \<lambda> seq :: (nat \<Rightarrow> nat \<Rightarrow> bool) list. length seq \<ge> 1 \<and> seq!0 = initcoins \<and> (\<forall> i < length seq - 1. legalmove (seq!i) (seq!(i + 1)))"
   assumes mnpos: "m \<ge> 1 \<and> n \<ge> 1"
-  shows "card {config :: nat \<Rightarrow> nat \<Rightarrow> bool. legalseq seq \<and> config = last seq} = putnam_2023_b1_solution m n"
+  shows "card {config :: nat \<Rightarrow> nat \<Rightarrow> bool. \<exists> seq. legalseq seq \<and> config = last seq} = putnam_2023_b1_solution m n"
   sorry
 
 end
